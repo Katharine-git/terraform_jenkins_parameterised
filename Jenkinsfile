@@ -5,7 +5,7 @@ env.AWS_SECRET_ACCESS_KEY = AWS_SECRET_KEY
 stages{                                                                                 
   stage ('Checkout') {
     git branch: 'b1',
-       url: 'https://github.com/Katharine-git/provishining_ec2_using_terraform.git'
+       url: 'https://github.com/Katharine-git/terraform_jenkins_parameterised.git'
   }
 
   stage ('Terraform Plan') {
