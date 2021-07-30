@@ -1,10 +1,12 @@
+pipeline{
+  
 // Environment Variables
 env.AWS_ACCESS_KEY_ID = AWS_ACCESS_KEY
 env.AWS_SECRET_ACCESS_KEY = AWS_SECRET_KEY
 
 stages{                                                                                 
   stage ('Checkout') {
-    git branch: 'b1',
+    git branch: 'master',
        url: 'https://github.com/Katharine-git/terraform_jenkins_parameterised.git'
   }
 
@@ -16,4 +18,5 @@ stages{
   stage ('Terraform Apply') {
     sh 'terraform apply -auto-approve'
   }
+}
 }
