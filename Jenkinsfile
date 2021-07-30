@@ -10,7 +10,7 @@ pipeline{
         stage('checkout') {
             steps {
                  
-                    git "https://github.com/Katharine-git/provishining_ec2_using_terraform.git"
+                    git "https://github.com/Katharine-git/terraform_jenkins_parameterised.git"
                 }
                 
             }
